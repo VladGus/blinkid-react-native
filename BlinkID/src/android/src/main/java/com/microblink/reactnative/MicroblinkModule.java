@@ -73,7 +73,8 @@ public class MicroblinkModule extends ReactContextBaseJavaModule {
             }
         }
 
-        ActivityRunner.startActivityForResult(getCurrentActivity(), REQUEST_CODE, overlaySettings);
+        final Intent intent = new Intent(currentActivity, MyScanActivity.class);
+        currentActivity.startActivityForResult(intent, REQUEST_CODE);
     }
 
     private void setLicense( String licenseKey ) {

@@ -17,4 +17,10 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="25"/>
 
+    <application>
+        <activity
+            android:name=".MyScanActivity">
+        </activity>
+    </application>
+
 </manifest>
