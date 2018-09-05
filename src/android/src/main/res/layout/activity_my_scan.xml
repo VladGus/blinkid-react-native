@@ -1,4 +1,4 @@
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
@@ -15,10 +15,50 @@
     </com.microblink.view.recognition.RecognizerRunnerView>
 
     <TextView
+        android:id="@+id/textViewScanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TEST MESSAGE"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"/>
+        android:text="@string/scanner_text"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"/>
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageViewBarcode"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textViewScanner"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_barcode"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageViewArrow"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

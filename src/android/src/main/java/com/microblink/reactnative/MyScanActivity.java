@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.RelativeLayout;
 
 import com.microblink.reactnative.R;
 import com.microblink.entities.recognizers.Recognizer;
@@ -70,18 +71,6 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
      */
     private CameraPermissionManager mCameraPermissionManager;
     /**
-     * This is a back button
-     */
-    private Button mBackButton = null;
-    /**
-     * This is a torch control button
-     */
-    private Button mTorchButton = null;
-    /**
-     * Is torch enabled?
-     */
-    private boolean mTorchEnabled = false;
-    /**
      * This is a text field that contains status messages
      */
     private TextView mStatusTextView = null;
@@ -103,10 +92,9 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_scan);
         mRecognizerView = findViewById(R.id.recognizerView);
+
         Recognizer[] recognizers = createRecognizers();
-        Log.e("TAG", recognizers.toString());
         recognizerBundle = new RecognizerBundle(recognizers);
-        Log.e("TAG", recognizerBundle.toString());
         mRecognizerView.setRecognizerBundle(recognizerBundle);
 
         // scan result listener will be notified when scan result gets available
@@ -116,16 +104,15 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
         mRecognizerView.setCameraEventsListener(this);
         // orientation allowed listener is asked if orientation is allowed when device orientation
         // changes - if orientation is allowed, rotatable views will be rotated to that orientation
-        mRecognizerView.setOrientationAllowedListener(new OrientationAllowedListener() {
-            @Override
-            public boolean isOrientationAllowed(Orientation orientation) {
-                // allow all orientations
-                return true;
-            }
-        });
+//        mRecognizerView.setOrientationAllowedListener(new OrientationAllowedListener() {
+//            @Override
+//            public boolean isOrientationAllowed(Orientation orientation) {
+//                // allow all orientations
+//                return true;
+//            }
+//        });
         // on size changed listener is notified whenever the size of the view is changed (for example
         // when transforming the view from portrait to landscape or vice versa)
-        mRecognizerView.setOnSizeChangedListener(this);
 
         setupMetadataCallbacks();
 
@@ -150,6 +137,14 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
         mRecognizerView.create();
 
         // after scanner is created, you can add your views to it
+        RelativeLayout cancelContainer = findViewById(R.id.relativeLayoutCancel);
+        cancelContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setResult(Activity.RESULT_CANCELED);
+                finish();
+            }
+        });
 
         // Use provided factory method from QuadViewManagerFactory that can instantiate the
         // QuadViewManager based on several presets defined in QuadViewPreset enum. Details about
@@ -160,19 +155,6 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
 
         // initialize buttons and status view
         View view = getLayoutInflater().inflate(R.layout.default_photopay_viewfinder, null);
-
-        mBackButton = view.findViewById(R.id.defaultBackButton);
-        mBackButton.setText(getString(R.string.mb_home));
-        mBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setResult(Activity.RESULT_CANCELED);
-                finish();
-            }
-        });
-
-        mTorchButton = view.findViewById(R.id.defaultTorchButton);
-        mTorchButton.setVisibility(View.GONE);
 
         mStatusTextView = view.findViewById(R.id.defaultStatusTextView);
         mStatusTextView.setVisibility(View.INVISIBLE);
@@ -282,51 +264,11 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
     @Override
     public void onCameraPreviewStarted() {
         // this method is called just after camera preview has started
-        enableTorchButtonIfPossible();
     }
 
     @Override
     public void onCameraPreviewStopped() {
         // this method is called just after camera preview has stopped
-    }
-
-    private void enableTorchButtonIfPossible() {
-        if (!mRecognizerView.isCameraTorchSupported() || mTorchButton == null) {
-            return;
-        }
-
-        mTorchButton.setVisibility(View.VISIBLE);
-        mTorchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onTorchBtnClick();
-            }
-        });
-    }
-
-    private void onTorchBtnClick() {
-        mRecognizerView.setTorchState(!mTorchEnabled, new SuccessCallback() {
-            @Override
-            public void onOperationDone(final boolean success) {
-                if (!success) {
-                    return;
-                }
-
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        mTorchEnabled = !mTorchEnabled;
-                        if (mTorchEnabled) {
-                            mTorchButton.setText(R.string.mb_light_on);
-                            mTorchButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.mb_lighton, 0, 0, 0);
-                        } else {
-                            mTorchButton.setText(R.string.mb_light_off);
-                            mTorchButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.mb_lightoff, 0, 0, 0);
-                        }
-                    }
-                });
-            }
-        });
     }
 
     @Override
@@ -420,18 +362,6 @@ public class MyScanActivity extends ReactActivity implements ScanResultListener,
         // we will use this callback in this example to adjust the margins of buttons
         int horizontalMargin = (int) (width * 0.07);
         int verticalMargin = (int) (height * 0.07);
-        // set margins for back button
-        FrameLayout.LayoutParams backButtonParams = (FrameLayout.LayoutParams) mBackButton.getLayoutParams();
-        if (backButtonParams.leftMargin != horizontalMargin && backButtonParams.topMargin != verticalMargin) {
-            backButtonParams.setMargins(horizontalMargin, verticalMargin, horizontalMargin, verticalMargin);
-            mBackButton.setLayoutParams(backButtonParams);
-        }
-        // set margins for torch button
-        FrameLayout.LayoutParams torchButtonParams = (FrameLayout.LayoutParams) mTorchButton.getLayoutParams();
-        if (torchButtonParams.leftMargin != horizontalMargin && torchButtonParams.topMargin != verticalMargin) {
-            torchButtonParams.setMargins(horizontalMargin, verticalMargin, horizontalMargin, verticalMargin);
-            mTorchButton.setLayoutParams(torchButtonParams);
-        }
         // set margins for text view
         FrameLayout.LayoutParams statusViewParams = (FrameLayout.LayoutParams) mStatusTextView.getLayoutParams();
         if (statusViewParams.bottomMargin != verticalMargin) {

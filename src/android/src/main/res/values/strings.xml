@@ -21,5 +21,8 @@
 
     <string name="error">Error</string>
     <string name="errorDesc">There has been an error starting the scanner.</string>
+    
+    <string name="scanner_text">Take a picture of the back of your Driver`s License</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
