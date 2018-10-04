@@ -18,17 +18,12 @@ export class SingaporeIdFrontRecognizerResult extends RecognizerResult {
         super(nativeResult.resultState);
         
         /** 
-         * The identity card number of the Singapore ID. 
-         */
-        this.cardNumber = nativeResult.cardNumber;
-        
-        /** 
-         * The country of birth of the Singapore ID owner. 
+         * The country/place of birth of the Singaporean ID card owner. 
          */
         this.countryOfBirth = nativeResult.countryOfBirth;
         
         /** 
-         * The date of birth of the Singapore ID owner. 
+         * The date of birth of the Singaporean ID card owner. 
          */
         this.dateOfBirth = nativeResult.dateOfBirth != null ? new Date(nativeResult.dateOfBirth) : null;
         
@@ -43,17 +38,22 @@ export class SingaporeIdFrontRecognizerResult extends RecognizerResult {
         this.fullDocumentImage = nativeResult.fullDocumentImage;
         
         /** 
-         * The name of the Singapore ID owner. 
+         * The identity card number of the Singaporean ID card. 
+         */
+        this.identityCardNumber = nativeResult.identityCardNumber;
+        
+        /** 
+         * The name of the Singaporean ID card owner. 
          */
         this.name = nativeResult.name;
         
         /** 
-         * The race of the Singapore ID owner. 
+         * The race of the Singaporean ID card owner. 
          */
         this.race = nativeResult.race;
         
         /** 
-         * The sex of the Singapore ID owner. 
+         * The sex of the Singaporean ID card owner. 
          */
         this.sex = nativeResult.sex;
         
@@ -77,32 +77,55 @@ export class SingaporeIdFrontRecognizer extends Recognizer {
         this.detectGlare = true;
         
         /** 
-         *  Defines if country of birth of Singapore ID owner should be extracted
+         *  Defines if country/place of birth of Singaporean ID card owner should be extracted
          * 
          *   
          */
         this.extractCountryOfBirth = true;
         
         /** 
-         *  Defines if date of birth of Singapore ID owner should be extracted
+         *  Defines if date of birth of Singaporean ID card owner should be extracted
          * 
          *   
          */
         this.extractDateOfBirth = true;
         
         /** 
-         *  Defines if race of Singapore ID owner should be extracted
+         *  Defines if name of Singaporean ID card owner should be extracted
+         * 
+         *   
+         */
+        this.extractName = true;
+        
+        /** 
+         *  Defines if race of Singaporean ID card owner should be extracted
          * 
          *   
          */
         this.extractRace = true;
         
         /** 
-         *  Defines if sex of Singapore ID owner should be extracted
+         *  Defines if sex of Singaporean ID card owner should be extracted
          * 
          *   
          */
         this.extractSex = true;
+        
+        /** 
+         * Property for setting DPI for face images
+         * Valid ranges are [100,400]. Setting DPI out of valid ranges throws an exception
+         * 
+         *  
+         */
+        this.faceImageDpi = 250;
+        
+        /** 
+         * Property for setting DPI for full document images
+         * Valid ranges are [100,400]. Setting DPI out of valid ranges throws an exception
+         * 
+         *  
+         */
+        this.fullDocumentImageDpi = 250;
         
         /** 
          * Sets whether face image from ID card should be extracted
