@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-Se-eVQ">
-                                <rect key="frame" x="20" y="20" width="67" height="22"/>
+                                <rect key="frame" x="20" y="30" width="67" height="22"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Cancel" image="BackIcon.png"/>
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="k4Q-9B-ww7" firstAttribute="centerX" secondItem="gjo-Fe-uXo" secondAttribute="centerX" id="51K-cY-5gp"/>
-                            <constraint firstItem="P3S-Se-eVQ" firstAttribute="top" secondItem="LWv-uy-7GZ" secondAttribute="bottom" id="Keg-fs-0eu"/>
+                            <constraint firstItem="P3S-Se-eVQ" firstAttribute="top" secondItem="LWv-uy-7GZ" secondAttribute="bottom" constant="10" id="Keg-fs-0eu"/>
                             <constraint firstItem="QEK-o1-qtg" firstAttribute="centerX" secondItem="k4Q-9B-ww7" secondAttribute="centerX" id="L4S-eG-LhW"/>
                             <constraint firstItem="Vv6-jh-Bgf" firstAttribute="top" secondItem="QEK-o1-qtg" secondAttribute="bottom" constant="40" id="VjY-di-FeW"/>
                             <constraint firstItem="k4Q-9B-ww7" firstAttribute="centerY" secondItem="gjo-Fe-uXo" secondAttribute="centerY" id="bxd-Do-7zy"/>
