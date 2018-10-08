@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxk-nY-vXw">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="H3M-kz-xje">
+            <objects>
+                <viewController id="vxk-nY-vXw" customClass="ScannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LWv-uy-7GZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hix-uj-5Ov"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gjo-Fe-uXo">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-Se-eVQ">
+                                <rect key="frame" x="20" y="20" width="67" height="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Cancel" image="BackIcon.png"/>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="vxk-nY-vXw" eventType="touchUpInside" id="Q03-dL-46e"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4Q-9B-ww7">
+                                <rect key="frame" x="50" y="296.5" width="668" height="431"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k4Q-9B-ww7" secondAttribute="height" multiplier="1.55" id="cOB-H0-HCr"/>
+                                    <constraint firstAttribute="width" constant="668" id="hYU-4J-KF2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a picture of the back of your Driver's License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv6-jh-Bgf">
+                                <rect key="frame" x="193.5" y="836.5" width="381.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar_code_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="QEK-o1-qtg">
+                                <rect key="frame" x="346.5" y="759" width="75" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="AMB-AB-FIW"/>
+                                    <constraint firstAttribute="width" secondItem="QEK-o1-qtg" secondAttribute="height" multiplier="2:1" id="fjb-1z-Cc4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k4Q-9B-ww7" firstAttribute="centerX" secondItem="gjo-Fe-uXo" secondAttribute="centerX" id="51K-cY-5gp"/>
+                            <constraint firstItem="P3S-Se-eVQ" firstAttribute="top" secondItem="LWv-uy-7GZ" secondAttribute="bottom" id="Keg-fs-0eu"/>
+                            <constraint firstItem="QEK-o1-qtg" firstAttribute="centerX" secondItem="k4Q-9B-ww7" secondAttribute="centerX" id="L4S-eG-LhW"/>
+                            <constraint firstItem="Vv6-jh-Bgf" firstAttribute="top" secondItem="QEK-o1-qtg" secondAttribute="bottom" constant="40" id="VjY-di-FeW"/>
+                            <constraint firstItem="k4Q-9B-ww7" firstAttribute="centerY" secondItem="gjo-Fe-uXo" secondAttribute="centerY" id="bxd-Do-7zy"/>
+                            <constraint firstItem="QEK-o1-qtg" firstAttribute="top" secondItem="k4Q-9B-ww7" secondAttribute="bottom" constant="31.5" id="ev8-4q-fY7"/>
+                            <constraint firstItem="Vv6-jh-Bgf" firstAttribute="centerX" secondItem="k4Q-9B-ww7" secondAttribute="centerX" id="fpp-uM-SLf"/>
+                            <constraint firstItem="P3S-Se-eVQ" firstAttribute="leading" secondItem="gjo-Fe-uXo" secondAttribute="leading" constant="20" id="yZD-V9-ZmA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="borderView" destination="k4Q-9B-ww7" id="ps3-2U-WC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cn2-U5-BMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="-353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackIcon.png" width="11" height="19"/>
+        <image name="bar_code_icon.png" width="24" height="12"/>
+    </resources>
+</document>

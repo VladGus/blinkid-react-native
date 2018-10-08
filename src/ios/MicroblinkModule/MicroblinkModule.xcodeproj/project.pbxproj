@@ -143,6 +143,11 @@
 		AD06478093065845EB4D4240 /* MBSingaporeDlFrontRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C4B07BC530D5936F3C90B /* MBSingaporeDlFrontRecognizerWrapper.m */; };
 		B08A49158255DB39581A2386 /* MBSwitzerlandDlFrontRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D14B2A8A205578C018F2D8 /* MBSwitzerlandDlFrontRecognizerWrapper.m */; };
 		B09543FBB301B1BCF1F129B3 /* MBAustraliaDlBackRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B35047B4AFF2C99FB20E6EF4 /* MBAustraliaDlBackRecognizerWrapper.m */; };
+		B1FBF8A5216B92FD00A1FB0A /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FBF8A3216B92FD00A1FB0A /* ScannerViewController.m */; };
+		B1FBF8A6216B92FD00A1FB0A /* ScannerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FBF8A4216B92FD00A1FB0A /* ScannerViewController.h */; };
+		B1FBF8B5216B9AB400A1FB0A /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FBF8A0216B92A400A1FB0A /* Scanner.storyboard */; };
+		B1FBF8B6216B9AB400A1FB0A /* bar_code_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FBF8A1216B92A400A1FB0A /* bar_code_icon@2x.png */; };
+		B1FBF8B7216B9AB400A1FB0A /* Light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FBF8A2216B92A400A1FB0A /* Light@2x.png */; };
 		B2FB4E8CA50A605F2DAF7B7F /* MBDocumentFaceRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DE4B799A13EFD5780489E8 /* MBDocumentFaceRecognizerWrapper.m */; };
 		B5674E4997654B3A9A2B4561 /* MBMyKadBackRecognizerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 061A4DFA964561710348B191 /* MBMyKadBackRecognizerWrapper.h */; };
 		B81E469C8F2A568C90B00D02 /* MBSpainDlFrontRecognizerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E041769F293345FBC14C3F /* MBSpainDlFrontRecognizerWrapper.h */; };
@@ -190,6 +195,16 @@
 		F9934990A3DC42FB443DCC03 /* MBBarcodeRecognizerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C7458D953F060BE2BC4905 /* MBBarcodeRecognizerWrapper.h */; };
 		FF4340DEBB26C5253040BF0A /* MBColombiaIdFrontRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F43C890F6C616C8DEC93D /* MBColombiaIdFrontRecognizerWrapper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1FBF8B8216B9B8200A1FB0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A27CCA231E9E57A500BED675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1FBF8AE216B9AAD00A1FB0A;
+			remoteInfo = MicroblinkModuleResources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A27CCA291E9E57A500BED675 /* CopyFiles */ = {
@@ -329,6 +344,13 @@
 		A9EF4D79828E373CC815B09D /* MBPolandCombinedRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBPolandCombinedRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBPolandCombinedRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
 		AB804E2C8D0C8156AA9DAB45 /* MBSpainDlFrontRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBSpainDlFrontRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBSpainDlFrontRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
 		B1DA4965A798D4107C48CF60 /* MBColombiaIdBackRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBColombiaIdBackRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBColombiaIdBackRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
+		B1FBF8A0216B92A400A1FB0A /* Scanner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		B1FBF8A1216B92A400A1FB0A /* bar_code_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_code_icon@2x.png"; sourceTree = "<group>"; };
+		B1FBF8A2216B92A400A1FB0A /* Light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Light@2x.png"; sourceTree = "<group>"; };
+		B1FBF8A3216B92FD00A1FB0A /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScannerViewController.m; path = MicroblinkModule/Overlays/Serialization/ScannerViewController.m; sourceTree = SOURCE_ROOT; };
+		B1FBF8A4216B92FD00A1FB0A /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannerViewController.h; path = MicroblinkModule/Overlays/Serialization/ScannerViewController.h; sourceTree = SOURCE_ROOT; };
+		B1FBF8AF216B9AAD00A1FB0A /* MicroblinkModuleResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroblinkModuleResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1FBF8B1216B9AAD00A1FB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B35047B4AFF2C99FB20E6EF4 /* MBAustraliaDlBackRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBAustraliaDlBackRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBAustraliaDlBackRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
 		B3644B5AB5138498FBF6E814 /* MBCyprusIdFrontRecognizerWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBCyprusIdFrontRecognizerWrapper.h; path = MicroblinkModule/Recognizers/Wrappers/MBCyprusIdFrontRecognizerWrapper.h; sourceTree = SOURCE_ROOT; };
 		B62F43C890F6C616C8DEC93D /* MBColombiaIdFrontRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBColombiaIdFrontRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBColombiaIdFrontRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
@@ -399,6 +421,13 @@
 				A27CCA431E9E5D9900BED675 /* AudioToolbox.framework in Frameworks */,
 				A27CCA421E9E5D9400BED675 /* CoreFoundation.framework in Frameworks */,
 				A27CCA401E9E5D8D00BED675 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FBF8AC216B9AAD00A1FB0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +635,8 @@
 				EC7049419EB3AB2D52332844 /* MBDocumentOverlaySettingsSerialization.m */,
 				E33046669EC5E3EA491F8675 /* MBDocumentVerificationOverlaySettingsSerialization.h */,
 				C2594BA6A525D2FAC92D1303 /* MBBarcodeOverlaySettingsSerialization.m */,
+				B1FBF8A4216B92FD00A1FB0A /* ScannerViewController.h */,
+				B1FBF8A3216B92FD00A1FB0A /* ScannerViewController.m */,
 			);
 			name = Serialization;
 			path = "/Users/juraskrlec/Documents/Workspace/BlinkID/blinkid-react-native/BlinkID/src/ios/MicroblinkModule/MicroblinkModule/Overlays/Serialization";
@@ -614,6 +645,7 @@
 		A27CCA221E9E57A500BED675 = {
 			isa = PBXGroup;
 			children = (
+				B1FBF8B0216B9AAD00A1FB0A /* MicroblinkModuleResources */,
 				A27CCA2C1E9E57A500BED675 /* Products */,
 				A27CCA371E9E57C900BED675 /* Frameworks */,
 				E3434303B7E8095B992BBDF1 /* MicroblinkModule */,
@@ -624,6 +656,7 @@
 			isa = PBXGroup;
 			children = (
 				A27CCA2B1E9E57A500BED675 /* libMicroblinkModule.a */,
+				B1FBF8AF216B9AAD00A1FB0A /* MicroblinkModuleResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -640,10 +673,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B1FBF89F216B92A400A1FB0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1FBF8A0216B92A400A1FB0A /* Scanner.storyboard */,
+				B1FBF8A1216B92A400A1FB0A /* bar_code_icon@2x.png */,
+				B1FBF8A2216B92A400A1FB0A /* Light@2x.png */,
+			);
+			name = Resources;
+			path = MicroblinkModule/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		B1FBF8B0216B9AAD00A1FB0A /* MicroblinkModuleResources */ = {
+			isa = PBXGroup;
+			children = (
+				B1FBF8B1216B9AAD00A1FB0A /* Info.plist */,
+			);
+			path = MicroblinkModuleResources;
+			sourceTree = "<group>";
+		};
 		E3434303B7E8095B992BBDF1 /* MicroblinkModule */ = {
 			isa = PBXGroup;
 			children = (
 				F223497CA066058B1434E6E6 /* MBBlinkIDSerializationUtils.m */,
+				B1FBF89F216B92A400A1FB0A /* Resources */,
 				0FF442F48379B8C27F802C5C /* Overlays */,
 				CBDC43C1B5F322E3CFD5F85D /* MBSerializationUtils.m */,
 				E04F48628D88D9811C5E25C0 /* MBMicroblinkModule.m */,
@@ -682,6 +735,7 @@
 				69324482982727C65415860C /* MBSingaporeDlFrontRecognizerWrapper.h in Headers */,
 				780D435D94DD908F5409CCE9 /* MBGermanyOldIdRecognizerWrapper.h in Headers */,
 				4B6D47159C50E6DB11D5C111 /* MBEudlRecognizerWrapper.h in Headers */,
+				B1FBF8A6216B92FD00A1FB0A /* ScannerViewController.h in Headers */,
 				6B984C48AA57B23A92F2AA68 /* MBPdf417RecognizerWrapper.h in Headers */,
 				772446A49D2283422659E0A1 /* MBSerbiaIdBackRecognizerWrapper.h in Headers */,
 				F4E149318F1FF352810B275F /* MBCroatiaCombinedRecognizerWrapper.h in Headers */,
@@ -771,11 +825,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				B1FBF8B9216B9B8200A1FB0A /* PBXTargetDependency */,
 			);
 			name = MicroblinkModule;
 			productName = BlinkIDReactNative;
 			productReference = A27CCA2B1E9E57A500BED675 /* libMicroblinkModule.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		B1FBF8AE216B9AAD00A1FB0A /* MicroblinkModuleResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1FBF8B2216B9AAD00A1FB0A /* Build configuration list for PBXNativeTarget "MicroblinkModuleResources" */;
+			buildPhases = (
+				B1FBF8AB216B9AAD00A1FB0A /* Sources */,
+				B1FBF8AC216B9AAD00A1FB0A /* Frameworks */,
+				B1FBF8AD216B9AAD00A1FB0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroblinkModuleResources;
+			productName = MicroblinkModuleResources;
+			productReference = B1FBF8AF216B9AAD00A1FB0A /* MicroblinkModuleResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -789,6 +861,10 @@
 					A27CCA2A1E9E57A500BED675 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = CQTJWP89J7;
+						ProvisioningStyle = Automatic;
+					};
+					B1FBF8AE216B9AAD00A1FB0A = {
+						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -806,9 +882,23 @@
 			projectRoot = "";
 			targets = (
 				A27CCA2A1E9E57A500BED675 /* MicroblinkModule */,
+				B1FBF8AE216B9AAD00A1FB0A /* MicroblinkModuleResources */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1FBF8AD216B9AAD00A1FB0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1FBF8B6216B9AB400A1FB0A /* bar_code_icon@2x.png in Resources */,
+				B1FBF8B7216B9AB400A1FB0A /* Light@2x.png in Resources */,
+				B1FBF8B5216B9AB400A1FB0A /* Scanner.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A27CCA271E9E57A500BED675 /* Sources */ = {
@@ -857,6 +947,7 @@
 				53A148EEB40300ECBCEC23B1 /* MBPolandCombinedRecognizerWrapper.m in Sources */,
 				BCD84C7CB82F0BDB8A638CB9 /* MBSlovakiaIdBackRecognizerWrapper.m in Sources */,
 				077943C2BE6492887C08C44C /* MBAustriaIdFrontRecognizerWrapper.m in Sources */,
+				B1FBF8A5216B92FD00A1FB0A /* ScannerViewController.m in Sources */,
 				7F3E4088BB125D3405DD5158 /* MBSlovakiaIdFrontRecognizerWrapper.m in Sources */,
 				5BF146EB83E51432358F0EC5 /* MBSwitzerlandPassportRecognizerWrapper.m in Sources */,
 				C50B4987800C1FC4E78E1BAA /* MBCzechiaIdFrontRecognizerWrapper.m in Sources */,
@@ -906,7 +997,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1FBF8AB216B9AAD00A1FB0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1FBF8B9216B9B8200A1FB0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1FBF8AE216B9AAD00A1FB0A /* MicroblinkModuleResources */;
+			targetProxy = B1FBF8B8216B9B8200A1FB0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A27CCA321E9E57A500BED675 /* Debug */ = {
@@ -1075,6 +1181,67 @@
 			};
 			name = Release;
 		};
+		B1FBF8B3216B9AAD00A1FB0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MicroblinkModuleResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MicroblinkModuleResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B1FBF8B4216B9AAD00A1FB0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MicroblinkModuleResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MicroblinkModuleResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1092,6 +1259,15 @@
 			buildConfigurations = (
 				A27CCA351E9E57A500BED675 /* Debug */,
 				A27CCA361E9E57A500BED675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1FBF8B2216B9AAD00A1FB0A /* Build configuration list for PBXNativeTarget "MicroblinkModuleResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1FBF8B3216B9AAD00A1FB0A /* Debug */,
+				B1FBF8B4216B9AAD00A1FB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
