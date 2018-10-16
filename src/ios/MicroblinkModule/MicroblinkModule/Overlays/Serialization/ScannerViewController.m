@@ -17,7 +17,7 @@
 
 + (instancetype)initFromStoryboardWith {
     NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"MicroblinkModuleResources.bundle/"];
-    ScannerViewController *scanner = (ScannerViewController *)[[UIStoryboard storyboardWithName:@"Scanner" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    ScannerViewController *scanner = (ScannerViewController *)[[UIStoryboard storyboardWithName:@"Scanner" bundle:[NSBundle bundleWithPath:path]] instantiateInitialViewController];
     return scanner;
 }
 
