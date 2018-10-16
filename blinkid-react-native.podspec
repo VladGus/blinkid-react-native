@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/BlinkID/blinkid-react-native.git", :tag => "v#{s.version}" }
-  s.source_files  = "src/ios", "src/ios/**/*.{h,m,storyboard,png}È
+  s.source_files  = "src/ios", "src/ios/**/*.{h,m,storyboard,png}"
 
   s.dependency 'React'
   s.dependency 'PPBlinkID', '~> 4.2.0'
