@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MicroBlink/MicroBlink.h>
+#import "MBOverlayViewControllerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
