@@ -32,6 +32,7 @@
     MBDocumentOverlaySettings *sett = [[MBDocumentOverlaySettings alloc] init];
     self.delegate = delegate;
     [MBOverlaySerializationUtils extractCommonOverlaySettings:jsonOverlaySettings overlaySettings:sett];
+    return [[MBDocumentOverlayViewController alloc] initWithSettings:sett recognizerCollection:recognizerCollection delegate:self];
     ScannerViewController *controller = [ScannerViewController initFromStoryboardWith];
     controller.delegate = self;
     [controller reconfigureRecognizers:recognizerCollection];
