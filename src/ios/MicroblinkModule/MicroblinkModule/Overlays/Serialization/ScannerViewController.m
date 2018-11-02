@@ -16,7 +16,6 @@
 @implementation ScannerViewController
 
 + (instancetype)initFromStoryboardWith {
-    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"MicroblinkModuleResources.bundle/"];
     ScannerViewController *scanner = (ScannerViewController *)[[UIStoryboard storyboardWithName:@"Scanner" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
     return scanner;
 }
@@ -27,14 +26,6 @@
     self.borderView.layer.borderWidth = 3.0;
     
     super.scanningRecognizerRunnerViewControllerDelegate = self;
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskAll;
-}
-
-- (BOOL)shouldAutorotate {
-    return YES;
 }
 
 - (void)recognizerRunnerViewController:(UIViewController<MBRecognizerRunnerViewController> *)recognizerRunnerViewController didFinishScanningWithState:(MBRecognizerResultState)state {

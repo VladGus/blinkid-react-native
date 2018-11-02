@@ -44,15 +44,15 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a picture of the back of your Driver's License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv6-jh-Bgf">
-                                <rect key="frame" x="321.5" y="708.5" width="381.5" height="21"/>
+                                <rect key="frame" x="321.5" y="733.5" width="381.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar_code_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="QEK-o1-qtg">
-                                <rect key="frame" x="437" y="631" width="150" height="37.5"/>
+                                <rect key="frame" x="387" y="631" width="250" height="62.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="AMB-AB-FIW"/>
+                                    <constraint firstAttribute="width" constant="250" id="AMB-AB-FIW"/>
                                     <constraint firstAttribute="width" secondItem="QEK-o1-qtg" secondAttribute="height" multiplier="4:1" id="fjb-1z-Cc4"/>
                                 </constraints>
                             </imageView>
