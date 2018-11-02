@@ -7,6 +7,7 @@
 
 #import "MBDocumentOverlaySettingsSerialization.h"
 #import "MBOverlaySerializationUtils.h"
+#import "ScannerViewController.h"
 
 @interface MBDocumentOverlaySettingsSerialization ()
 
@@ -31,7 +32,10 @@
     MBDocumentOverlaySettings *sett = [[MBDocumentOverlaySettings alloc] init];
     self.delegate = delegate;
     [MBOverlaySerializationUtils extractCommonOverlaySettings:jsonOverlaySettings overlaySettings:sett];
-    return [[MBDocumentOverlayViewController alloc] initWithSettings:sett recognizerCollection:recognizerCollection delegate:self];
+    ScannerViewController *controller = [ScannerViewController initFromStoryboardWith];
+    controller.delegate = delegate;
+    [controller reconfigureRecognizers:recognizerCollection];
+    return controller;
 }
 
 - (void)documentOverlayViewControllerDidFinishScanning:(nonnull MBDocumentOverlayViewController *)documentOverlayViewController state:(MBRecognizerResultState)state {
