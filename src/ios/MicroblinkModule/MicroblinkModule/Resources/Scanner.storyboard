@@ -24,7 +24,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-Se-eVQ">
                                 <rect key="frame" x="20" y="30" width="67" height="22"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-9" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Cancel" image="BackIcon.png"/>
                                 <connections>
                                     <action selector="cancelPressed:" destination="vxk-nY-vXw" eventType="touchUpInside" id="Q03-dL-46e"/>
