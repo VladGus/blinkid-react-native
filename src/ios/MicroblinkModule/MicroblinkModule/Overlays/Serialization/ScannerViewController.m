@@ -29,6 +29,14 @@
     super.scanningRecognizerRunnerViewControllerDelegate = self;
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
 - (void)recognizerRunnerViewController:(UIViewController<MBRecognizerRunnerViewController> *)recognizerRunnerViewController didFinishScanningWithState:(MBRecognizerResultState)state {
     
     [self.delegate overlayViewControllerDidFinishScanning:self state:state];
