@@ -33,7 +33,7 @@
     self.delegate = delegate;
     [MBOverlaySerializationUtils extractCommonOverlaySettings:jsonOverlaySettings overlaySettings:sett];
     ScannerViewController *controller = [ScannerViewController initFromStoryboardWith];
-    controller.delegate = self;
+    controller.delegate = delegate;
     [controller reconfigureRecognizers:recognizerCollection];
     return controller;
 }

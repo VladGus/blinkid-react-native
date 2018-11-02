@@ -143,6 +143,7 @@
 		AD06478093065845EB4D4240 /* MBSingaporeDlFrontRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C4B07BC530D5936F3C90B /* MBSingaporeDlFrontRecognizerWrapper.m */; };
 		B08A49158255DB39581A2386 /* MBSwitzerlandDlFrontRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D14B2A8A205578C018F2D8 /* MBSwitzerlandDlFrontRecognizerWrapper.m */; };
 		B09543FBB301B1BCF1F129B3 /* MBAustraliaDlBackRecognizerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B35047B4AFF2C99FB20E6EF4 /* MBAustraliaDlBackRecognizerWrapper.m */; };
+		B13257E2218C71E100D2BDC3 /* BackIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13257E1218C71E100D2BDC3 /* BackIcon@2x.png */; };
 		B1FBF8A5216B92FD00A1FB0A /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FBF8A3216B92FD00A1FB0A /* ScannerViewController.m */; };
 		B1FBF8A6216B92FD00A1FB0A /* ScannerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FBF8A4216B92FD00A1FB0A /* ScannerViewController.h */; };
 		B1FBF8B5216B9AB400A1FB0A /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FBF8A0216B92A400A1FB0A /* Scanner.storyboard */; };
@@ -343,6 +344,7 @@
 		A884408DACECE87AB3F3BCB4 /* MBPolandIdFrontRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBPolandIdFrontRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBPolandIdFrontRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
 		A9EF4D79828E373CC815B09D /* MBPolandCombinedRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBPolandCombinedRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBPolandCombinedRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
 		AB804E2C8D0C8156AA9DAB45 /* MBSpainDlFrontRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBSpainDlFrontRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBSpainDlFrontRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
+		B13257E1218C71E100D2BDC3 /* BackIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackIcon@2x.png"; sourceTree = "<group>"; };
 		B1DA4965A798D4107C48CF60 /* MBColombiaIdBackRecognizerWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBColombiaIdBackRecognizerWrapper.m; path = MicroblinkModule/Recognizers/Wrappers/MBColombiaIdBackRecognizerWrapper.m; sourceTree = SOURCE_ROOT; };
 		B1FBF8A0216B92A400A1FB0A /* Scanner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
 		B1FBF8A1216B92A400A1FB0A /* bar_code_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_code_icon@2x.png"; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 			isa = PBXGroup;
 			children = (
 				B1FBF8A0216B92A400A1FB0A /* Scanner.storyboard */,
+				B13257E1218C71E100D2BDC3 /* BackIcon@2x.png */,
 				B1FBF8A1216B92A400A1FB0A /* bar_code_icon@2x.png */,
 				B1FBF8A2216B92A400A1FB0A /* Light@2x.png */,
 			);
@@ -894,6 +897,7 @@
 			files = (
 				B1FBF8B6216B9AB400A1FB0A /* bar_code_icon@2x.png in Resources */,
 				B1FBF8B7216B9AB400A1FB0A /* Light@2x.png in Resources */,
+				B13257E2218C71E100D2BDC3 /* BackIcon@2x.png in Resources */,
 				B1FBF8B5216B9AB400A1FB0A /* Scanner.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxk-nY-vXw">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxk-nY-vXw">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hix-uj-5Ov"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gjo-Fe-uXo">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-Se-eVQ">
@@ -30,7 +31,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4Q-9B-ww7">
-                                <rect key="frame" x="50" y="296.5" width="668" height="431"/>
+                                <rect key="frame" x="178" y="168.5" width="668" height="431"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="k4Q-9B-ww7" secondAttribute="height" multiplier="1.55" id="cOB-H0-HCr"/>
@@ -43,16 +44,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a picture of the back of your Driver's License" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vv6-jh-Bgf">
-                                <rect key="frame" x="193.5" y="836.5" width="381.5" height="21"/>
+                                <rect key="frame" x="321.5" y="708.5" width="381.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bar_code_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="QEK-o1-qtg">
-                                <rect key="frame" x="346.5" y="759" width="75" height="37.5"/>
+                                <rect key="frame" x="437" y="631" width="150" height="37.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="AMB-AB-FIW"/>
-                                    <constraint firstAttribute="width" secondItem="QEK-o1-qtg" secondAttribute="height" multiplier="2:1" id="fjb-1z-Cc4"/>
+                                    <constraint firstAttribute="width" constant="150" id="AMB-AB-FIW"/>
+                                    <constraint firstAttribute="width" secondItem="QEK-o1-qtg" secondAttribute="height" multiplier="4:1" id="fjb-1z-Cc4"/>
                                 </constraints>
                             </imageView>
                         </subviews>
